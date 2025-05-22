@@ -19,7 +19,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">A propos de moi</a>
+                            <a class="nav-link" href="#about">About Me</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -32,6 +32,72 @@
             </div>
         </nav>
     </header>
+
+    <section id="about" class="container mt-5">
+        <h2>About Me</h2>
+        <p id="dynamic-greeting" style="font-style: italic; margin-bottom: 1em;"></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+    <section id="portfolio" class="container mt-5">
+        <h2>My Work</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x250" class="card-img-top" alt="Project Alpha">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Alpha</h5>
+                        <p class="card-text">Short description of Project Alpha. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x250" class="card-img-top" alt="Project Beta">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Beta</h5>
+                        <p class="card-text">Short description of Project Beta. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x250" class="card-img-top" alt="Project Gamma">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Gamma</h5>
+                        <p class="card-text">Short description of Project Gamma. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container mt-5">
+        <h2>Get in Touch</h2>
+        <form action="#" method="POST">
+            <div class="mb-3">
+                <label for="contactName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="contactName" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+                <label for="contactEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="contactEmail" name="email" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="contactSubject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="contactSubject" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="mb-3">
+                <label for="contactMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="contactMessage" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
     <footer>
         <div class="container">
             <div class="row">
