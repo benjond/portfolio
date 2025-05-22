@@ -20,14 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const greetingElement = document.getElementById('dynamic-greeting');
     if (greetingElement) {
         const currentHour = new Date().getHours();
-        let greeting = "Hello!"; // Default greeting
+        let greeting = "Salut !"; // Default greeting in French
 
         if (currentHour < 12) {
-            greeting = "Good morning!";
+            greeting = "Bonjour !";
         } else if (currentHour < 18) {
-            greeting = "Good afternoon!";
+            greeting = "Bon après-midi !";
         } else {
-            greeting = "Good evening!";
+            greeting = "Bonsoir !";
         }
         greetingElement.textContent = greeting;
         // Optional: Add some style to the greeting if not already done in HTML/CSS
