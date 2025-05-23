@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', () => {
     // Smooth Scrolling for Navigation Links
     const navLinks = document.querySelectorAll('#navbarNav a[href^="#"]');
@@ -35,3 +36,5 @@ document.addEventListener('DOMContentLoaded', () => {
         // greetingElement.style.color = '#555';
     }
 });
+=======
+>>>>>>> parent of b6e429f (Merge pull request #1 from benjond/portfolio-creation)
