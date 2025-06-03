@@ -127,6 +127,16 @@ function openProjectModal(projectKey) {
 // Rendre la fonction disponible globalement
 window.openProjectModal = openProjectModal;
 
+// Alternative si Bootstrap n'est pas encore chargé
+window.addEventListener('load', function() {
+    // S'assurer que Bootstrap est chargé
+    if (typeof bootstrap !== 'undefined') {
+        console.log('Bootstrap est prêt');
+    } else {
+        console.warn('Bootstrap n\'est pas chargé');
+    }
+});
+
 // Gestion de la navigation smooth scroll
 document.addEventListener('DOMContentLoaded', function() {
     // Gestion du scroll pour la navbar
