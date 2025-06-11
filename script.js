@@ -48,13 +48,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
       console.log('Paramètres envoyés à EmailJS:', templateParams);
 
-      // Envoyer l'auto-reply (pour le visiteur) - template existant
-      const sendAutoReply = emailjs.send("service_f9l1tsl", "template_1whkv5w", {
+      // Paramètres pour l'auto-reply
+      const autoReplyParams = {
+        from_name: this.from_name.value,
+        user_name: this.from_name.value,
         name: this.from_name.value,
+        
+        from_email: this.from_email.value,
+        user_email: this.from_email.value,
         email: this.from_email.value,
+        reply_to: this.from_email.value,
+        
         subject: this.subject.value,
-        message: this.message.value
-      });
+        message_subject: this.subject.value,
+        
+        message: this.message.value,
+        user_message: this.message.value
+      };
+
+      console.log('Paramètres auto-reply envoyés:', autoReplyParams);
+
+      // Envoyer l'auto-reply (pour le visiteur) - template existant
+      const sendAutoReply = emailjs.send("service_f9l1tsl", "template_1whkv5w", autoReplyParams);
       
       // Envoyer l'email principal (pour vous) - template créé
       const sendMainEmail = emailjs.send("service_f9l1tsl", "template_ry70fvc", templateParams);
