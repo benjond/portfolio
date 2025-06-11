@@ -79,54 +79,42 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// Fonction pour ouvrir les modales de projets
-function openProjectModal(projectId) {
+// Fonction pour ouvrir les modales de compétences
+function openProjectModal(competenceId) {
   const modalTitle = document.getElementById('projectModalLabel');
   const modalBody = document.getElementById('projectModalBody');
 
   let title = '';
   let content = '';
 
-  switch (projectId) {
-    case 'ecommerce':
-      title = 'Site E-commerce';
+  switch (competenceId) {
+    case 'competence1':
+      title = 'Compétence 1';
       content = `
-        <p>Site complet de vente en ligne :</p>
+        <p>Détails de ma première compétence :</p>
         <ul>
-          <li>Gestion des produits, catégories et stocks</li>
-          <li>Panier dynamique et responsive</li>
-          <li>Paiement sécurisé via Stripe</li>
-          <li>Espace admin pour gérer les commandes</li>
+          <li>Technologies maîtrisées</li>
+          <li>Outils utilisés</li>
+          <li>Niveau d'expertise</li>
+          <li>Projets réalisés avec cette compétence</li>
         </ul>
       `;
       break;
-    case 'dashboard':
-      title = 'Dashboard Analytics';
+    case 'competence2':
+      title = 'Compétence 2';
       content = `
-        <p>Plateforme de suivi de données en temps réel :</p>
+        <p>Détails de ma seconde compétence :</p>
         <ul>
-          <li>Graphiques interactifs (Chart.js, D3.js)</li>
-          <li>Connexion API & base de données</li>
-          <li>Mises à jour en direct avec WebSockets</li>
-          <li>Filtres avancés et tableaux dynamiques</li>
-        </ul>
-      `;
-      break;
-    case 'mobile':
-      title = 'Application Mobile';
-      content = `
-        <p>App multi-plateformes pour la gestion de tâches :</p>
-        <ul>
-          <li>Développée en Flutter</li>
-          <li>Synchronisation cloud (Firebase)</li>
-          <li>Notifications et rappels</li>
-          <li>Partage et collaboration en temps réel</li>
+          <li>Frameworks maîtrisés</li>
+          <li>Méthodologies appliquées</li>
+          <li>Certifications obtenues</li>
+          <li>Expérience pratique</li>
         </ul>
       `;
       break;
     default:
-      title = 'Projet';
-      content = '<p>Aucune description disponible pour ce projet.</p>';
+      title = 'Compétence';
+      content = '<p>Aucune description disponible pour cette compétence.</p>';
   }
 
   modalTitle.textContent = title;
