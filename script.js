@@ -106,7 +106,11 @@ function openProjectModal(competenceId) {
     case 'competence1':
       title = 'Compétence 1';
       content = `
-        <img src="figure1.png" alt="Figure 1" class="img-fluid mb-4" style="max-width: 100%; height: auto;">
+        <img src="figure1.png" alt="Figure 1" class="img-fluid mb-2" style="max-width: 100%; height: auto;">
+        <div class="text-center mb-4">
+          <h6 class="fw-bold">Figure 1</h6>
+          <p class="text-muted small">Interface d'une application web de e-commerce avec gestion de panier d'achat développée en utilisant Flask</p>
+        </div>
         
         <div class="competence-description">
           <p>La <strong>Figure 1</strong> illustre une capture d'écran partielle d'une <strong>application web</strong> que j'ai développée avec <strong>Flask</strong>, dans le cadre d'un projet de <strong>gestion d'un panier d'achat en ligne</strong>. Cette application permet à un utilisateur authentifié de consulter un catalogue d'articles, de filtrer les produits selon plusieurs critères (type, nom, prix), de sélectionner des déclinaisons (tailles, modèles), d'ajouter des articles au panier, puis de finaliser la commande.</p>
