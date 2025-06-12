@@ -21,6 +21,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     scroll-behavior: smooth;
+    padding-top: 76px; /* Hauteur approximative de la navbar */
 }
 
 /* Navigation */
@@ -29,6 +30,14 @@ body {
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    z-index: 1050;
+}
+
+.navbar.fixed-top {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 .navbar-brand {
